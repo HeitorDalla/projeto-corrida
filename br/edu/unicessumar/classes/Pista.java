@@ -1,12 +1,5 @@
-skbnsinv[EWNV
-wejov
-WRWR
-BVOwm
-vmW
-DV
-dvW
-OVJ
-dvkW
-OVBM
-fbnwfnvae[r
-]]
+package br.edu.unicessumar.classes;
+
+public class Pista {
+    
+}
