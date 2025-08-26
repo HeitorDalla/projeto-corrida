@@ -12,5 +12,18 @@ public class Pista {
         this.tipoPista = tipoPista;
         this.clima = clima;
     }
+    public String getnome(){
+        return nome;
+    }
+    public String getdistancia(){
+        return distancia;
+    }
+    public String gettipoPista(){
+        return tipoPista;
+    }
+    public String getclima(){
+        return clima;
+    }
+
     
 }
