@@ -1,4 +1,4 @@
-package br.edu.unicessumar.classes;
+package src.br.edu.unicesumar.classes;
 
 public class Carro {
     
@@ -8,15 +8,39 @@ public class Carro {
     private String potencia;
     private String aderencia;
     private String frenagem;
-    private String velocidade;
+    private int velocidade;
 
-    public Carro(String modelo, String marca, String potencia, String aderencia, String frenagem, String velocidade){
+    public Carro(String modelo, String marca, String potencia, String aderencia, String frenagem){
         
         this.modelo = modelo;
         this.marca = marca;
         this.potencia = potencia;
         this.aderencia = aderencia;
         this.frenagem = frenagem;
-        this.velocidade = velocidade;
+        this.velocidade = 0;
+    }
+
+    public String getModelo(){
+        return modelo;
+    }
+    public String getMarca(){
+        return marca;
+    }
+    public String getPotencia(){
+        return potencia;
+    }
+    public String getAderencia(){
+        return aderencia;
+    }
+    public String getFrenagem(){
+        return frenagem;
+    }
+    public int getVelocidade(){
+        return velocidade;
+    }
+
+
+    public void Acelerar(){
+        velocidade += potencia / 10; 
     }
 }
