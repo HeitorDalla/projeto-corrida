@@ -1,4 +1,4 @@
-package br.edu.unicessumar.classes;
+package src.br.edu.unicesumar.classes;
 
 public class TipoCorrida {
 
