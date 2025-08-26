@@ -5,12 +5,12 @@ public class Carro {
 
     private String modelo;
     private String marca;
-    private String potencia;
-    private String aderencia;
-    private String frenagem;
+    private int potencia;
+    private double aderencia;
+    private int frenagem;
     private int velocidade;
 
-    public Carro(String modelo, String marca, String potencia, String aderencia, String frenagem){
+    public Carro(String modelo, String marca, int potencia, double aderencia, int frenagem){
         
         this.modelo = modelo;
         this.marca = marca;
@@ -26,13 +26,13 @@ public class Carro {
     public String getMarca(){
         return marca;
     }
-    public String getPotencia(){
+    public int  getPotencia(){
         return potencia;
     }
-    public String getAderencia(){
+    public double getAderencia(){
         return aderencia;
     }
-    public String getFrenagem(){
+    public int getFrenagem(){
         return frenagem;
     }
     public int getVelocidade(){
@@ -40,7 +40,26 @@ public class Carro {
     }
 
 
-    public void Acelerar(){
+    public void acelerar(){
         velocidade += potencia / 10; 
+        System.out.println(modelo + "acelerou.\nVelocidade: " + velocidade + "km/h");
+    }
+
+    public void frear(){
+        velocidade -= frenagem * 5;
+        if(velocidade < 0){
+            velocidade = 0;
+        }
+        System.out.println(modelo + "Freou.\nVelocidade: " + velocidade + "km/h");
+    }
+
+    public void curva(){
+        double derrapar = Math.random();
+        if(derrapar > aderencia){
+            System.out.println(modelo + " Derrapou!");
+        }
+        else{
+            System.out.println(modelo + "fez a curva com sucesso!");
+        }
     }
 }
