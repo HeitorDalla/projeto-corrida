@@ -24,6 +24,29 @@ public class Pista {
     public String getclima(){
         return clima;
     }
+     // Setters
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setDistancia(String distancia) {
+        this.distancia = distancia;
+    }
+
+    public void setTipoPista(String tipoPista) {
+        this.tipoPista = tipoPista;
+    }
+
+    public void setClima(String clima) {
+        this.clima = clima;
+    }
+
+    // Método para exibir informações da pista
+    @Override
+    public String toString() {
+        return "Pista: " + nome + " | Distância: " + distancia +
+               " | Tipo: " + tipoPista + " | Clima: " + clima;
+    }
 
     
 }
